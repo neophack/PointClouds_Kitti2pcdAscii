@@ -72,7 +72,7 @@ int readKittiFile(std::string inFileName, std::vector<PointT> &pointCloudVector,
 
     PointT point;
 
-    for (uint32_t i = 0; i < buffer.size(); i+=4) {
+    for (uint32_t i = 0; i < buffer.size(); i+=5) {
         point.x = buffer[i];
         point.y = buffer[i+1];
         point.z = buffer[i+2];
